@@ -1,0 +1,82 @@
+.gallery {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  padding: 20px;
+}
+
+.form {
+  width: 500px;
+  padding: 40px;
+  border: 2px solid gray;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.label {
+  display: block;
+  text-align: right;
+}
+
+.field {
+  width: 50%;
+  padding: 5px;
+  font-size: 20px;
+
+  margin-left: 10px;
+
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+
+.rowMessage {
+  min-height: 40px;
+}
+
+.messageInvalid {
+  color: red;
+}
+
+.btn {
+  padding: 10px 20px;
+}
+
+.btnAdd {
+  align-self: center;
+  font-size: 16px;
+  background: none;
+
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+
+.content {
+  min-width: 100%;
+  min-height: 200px;
+
+  border: 2px solid gray;
+  border-radius: 5px;
+}
