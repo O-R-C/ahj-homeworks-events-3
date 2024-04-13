@@ -36,6 +36,7 @@ export default class GalleryUI {
     const rowUrl = this.getRow('Url', 'Ссылка на изображение')
     const rowMessage = this.getMessageInvalid()
     const buttonAdd = this.getButton('Add', 'Добавить')
+    buttonAdd.type = 'submit'
 
     fields.append(rowName, rowUrl, rowMessage)
     form.append(fields, buttonAdd)
@@ -57,6 +58,8 @@ export default class GalleryUI {
     label.textContent = title
 
     const field = this.getElement([styles.field, `field${className}`], 'input')
+    field.required = true
+
     label.append(field)
 
     return label
