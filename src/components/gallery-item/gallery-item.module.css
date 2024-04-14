@@ -1,0 +1,31 @@
+@value btnSize: 30px;
+@value btnOffset: -15px;
+
+.item {
+  position: relative;
+  width: 160px;
+  height: 100px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btnDel {
+  width: btnSize;
+  height: btnSize;
+  padding: 5px;
+  font-size: 16px;
+
+  border: 1px solid gray;
+  border-radius: calc(btnSize / 2);
+
+  position: absolute;
+  top: btnOffset;
+  right: btnOffset;
+
+  cursor: pointer;
+}

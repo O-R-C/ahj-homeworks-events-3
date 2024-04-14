@@ -1,3 +1,4 @@
+import GalleryItem from '../gallery-item/gallery-item'
 import styles from './gallery.module.css'
 
 /**
@@ -101,6 +102,25 @@ export default class GalleryUI {
     this.app.append(this.form, this.content)
 
     return this.app
+  }
+
+  /**
+   * Создает и возвращает элемент,
+   * изображение с кнопкой удалить
+   * @param {Object} image объект данных изображения
+   * @returns элемент
+   */
+  getGalleryItem(image) {
+    return new GalleryItem(image).getItem()
+  }
+
+  /**
+   * Создает и возвращает массив элементов изображений
+   * @param {Array} images массив объектов, описания изображений
+   * @returns массив элементов
+   */
+  getGalleryItems(images) {
+    return images.reduce((acc, image) => [...acc, this.getGalleryItem(image)], [])
   }
 
   /**
